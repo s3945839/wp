@@ -1,3 +1,6 @@
+/* -------------------------- Styles For All Pages ---------------------------------- */
+/* Header Style */
+
 header {
     background-color: #008080;
     height: 100px;
@@ -28,7 +31,7 @@ header .search-icon {
     width: 20px;
 }
 
-
+/* Footer Style */
 footer {
     background-color: #E57F3D;
     position: relative;
@@ -40,9 +43,19 @@ footer {
     text-align: center;
 }
 
-main {
-    background-color: #fcf9ec;
+/* Body Style */
+body {
+    width: 1200px;
+    margin: auto;
 
+}
+
+
+
+/* -------------------------- Index Page Styles ---------------------------------- */
+
+.index-page-main {
+    background-color: #fcf9ec;
 }
 
 main h1 {
@@ -73,3 +86,47 @@ main .main-image {
 main .main-image img {
     border-radius: 50%;
 }
+
+main table {
+    border: 1px solid black;
+    float: right;
+}
+
+/* -------------------------- Pets Page Styles ---------------------------------- */
+.add-page-image {
+    display: inline-block;
+}
+
+.add-page-table {
+    display: inline-block;
+    float: right;
+}
+
+.add-page-table-shortcolumn {
+    width: 100px;
+}
+
+.add-page-table-longcolumn {
+    width: 250px;
+}
+
+.add-page-title {
+    font-family: "Poetsen One";
+    color: black;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.add-page-table th {
+    background-color: #fcf9ec;
+    color: #008080;
+    font-family: 'Ysabeau SC'
+}
+
+.add-page-table td {
+    background-color: white;
+    font-family: 'Ysabeau SC'
+}
+
+/* -------------------------- Add Page Styles ---------------------------------- */
