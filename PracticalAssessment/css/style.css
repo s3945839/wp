@@ -1,0 +1,75 @@
+header {
+    background-color: #008080;
+    height: 100px;
+}
+
+header img {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+header nav {
+    display: inline-block;
+}
+
+header .search-container {
+    display: inline-block;
+    float: right;
+}
+
+#logo {
+    vertical-align: middle;
+}
+
+header .search-icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+
+footer {
+    background-color: #E57F3D;
+    position: relative;
+    height: 100px;
+}
+
+.center {
+    padding: 30px 0;
+    text-align: center;
+}
+
+main {
+    background-color: #fcf9ec;
+
+}
+
+main h1 {
+    font-family: "Permanent Marker";
+    color: #E57F3D;
+    font-size: 48px;
+}
+
+main h2 {
+    font-family: "Poetsen One";
+    color: #008080;
+    font-size: 48px;
+}
+
+main p {
+    font-family: 'Ysabeau SC'
+}
+
+main .main-title {
+    display: inline-block;
+    margin-top: 0;
+}
+
+main .main-image {
+    display: inline-block;
+}
+
+main .main-image img {
+    border-radius: 50%;
+}
