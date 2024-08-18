@@ -209,6 +209,8 @@ main table {
 }
 
 .gallery-page-image-discovermore {
-    text-align: center;
-    padding: 10px;
+    position: absolute;
+    top: 320px;
+    left: 440px;
+
 }
