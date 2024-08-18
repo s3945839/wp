@@ -5,4 +5,4 @@ function changePage ()
     if (url != "") {
         location.href = url;
     }
-}
+} 
