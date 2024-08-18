@@ -4,16 +4,18 @@
 <head>
     <title>Pets</title>
     <meta charset=utf-8>
+
     <link rel="stylesheet" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Poetsen One' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Ysabeau SC' rel='stylesheet'>
+    <script src="js/main.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Permanent%20Marker' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poetsen%20One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Ysabeau%20SC' rel='stylesheet'>
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 </head>
 
 <body>
@@ -21,12 +23,21 @@
         <header>
             <img src="images/logo.png" alt="pawprint">
             <nav>
-                <select>
+                <select id="menu" onchange="changePage()">
                     <option value="">
-                        please select
+                        Please select
                     </option>
                     <option value="index.html">
-                        home
+                        Home
+                    </option>
+                    <option value="pets.html">
+                        Pets
+                    </option>
+                    <option value="add.html">
+                        Add
+                    </option>
+                    <option value="gallery.html">
+                        Gallery
                     </option>
                 </select>
             </nav>

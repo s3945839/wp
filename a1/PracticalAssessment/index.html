@@ -5,6 +5,7 @@
     <title>Pets</title>
     <meta charset=utf-8>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/main.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poetsen One' rel='stylesheet'>
     <link rel="stylesheet"
@@ -16,12 +17,21 @@
         <header>
             <img src="images/logo.png" alt="pawprint" id="logo">
             <nav>
-                <select>
+                <select id="menu" onchange="changePage()">
                     <option value="">
-                        please select
+                        Please select
                     </option>
                     <option value="index.html">
-                        home
+                        Home
+                    </option>
+                    <option value="pets.html">
+                        Pets
+                    </option>
+                    <option value="add.html">
+                        Add
+                    </option>
+                    <option value="gallery.html">
+                        Gallery
                     </option>
                 </select>
             </nav>
