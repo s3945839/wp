@@ -130,3 +130,53 @@ main table {
 }
 
 /* -------------------------- Add Page Styles ---------------------------------- */
+.addpets-page-title {
+    font-family: "Poetsen One";
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+.addpets-page-description {
+    text-align: center;
+}
+
+.addpets-page-input {
+    width: 100%;
+}
+
+.addpets-page-label {
+    font-family: 'Ysabeau SC';
+}
+
+.addpets-page-labelstar {
+    color: red;
+}
+
+.addpets-page-submit {
+    border-radius: 12px;
+    background-color: #008080;
+    color: white;
+    border: none;
+}
+
+.addpets-page-close {
+    border-radius: 12px;
+    color: #008080;
+    border-color: #008080;
+}
+
+.addpets-page-buttons {
+    margin: auto;
+    width: 20%;
+
+}
+
+.addpets-page-nofile {}
+
+.addpets-page-maximage {
+    display: inline-block;
+    margin-left: 200px;
+    font-style: italic;
+    color: red;
+}
