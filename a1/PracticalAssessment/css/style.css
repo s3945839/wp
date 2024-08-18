@@ -180,3 +180,35 @@ main table {
     font-style: italic;
     color: red;
 }
+
+/* -------------------------- Gallery Page Styles ---------------------------------- */
+
+.gallery-page-image {
+    width: 300px;
+    height: 200px;
+    border-radius: 12px;
+
+
+}
+
+.gallery-page-image-container {
+    display: inline-block;
+    border-radius: 12px;
+    border: 1px solid gray;
+}
+
+.gallery-page-image-name {
+    text-align: center;
+    font-family: "Poetsen One";
+}
+
+.gallery-page-title {
+    font-size: 18px;
+    text-align: center;
+    color: black;
+}
+
+.gallery-page-image-discovermore {
+    text-align: center;
+    padding: 10px;
+}
