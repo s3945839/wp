@@ -212,5 +212,10 @@ main table {
     position: absolute;
     top: 320px;
     left: 440px;
+    opacity: 0;
 
+}
+
+.gallery-page-image-discovermore:hover {
+    opacity: 1;
 }
