@@ -100,6 +100,8 @@ main table {
 .add-page-table {
     display: inline-block;
     float: right;
+    height: 250px;
+    overflow: scroll;
 }
 
 .add-page-table-shortcolumn {
@@ -222,4 +224,42 @@ main table {
 
 .gallery-page-image-discovermore:hover {
     opacity: 1;
+}
+
+/* -------------------------- Details Page Styles ---------------------------------- */
+.detail-page-image-outer {
+    display: block;
+    text-align: center;
+}
+
+.detail-page-age {
+    display: inline-block;
+    width: 380px;
+    text-align: center;
+    font-family: 'Ysabeau SC';
+}
+
+.detail-page-type {
+    display: inline-block;
+    width: 380px;
+    text-align: center;
+    font-family: 'Ysabeau SC';
+}
+
+.detail-page-location {
+    display: inline-block;
+    width: 380px;
+    text-align: center;
+    font-family: 'Ysabeau SC';
+}
+
+.detail-page-petname {
+    text-align: center;
+    font-family: "Poetsen One";
+}
+
+.detail-page-description {
+    text-align: center;
+    font-family: 'Ysabeau SC';
+
 }

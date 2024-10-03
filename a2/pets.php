@@ -1,5 +1,8 @@
 <?php
- include ("includes/header.inc");?>
+ include ("includes/header.inc");
+ include("includes/db_connect.inc"); 
+  $pets= mysqli_query($conn, "select * from pets");
+ ?>
         <main>
             <h2 class="add-page-title">Discover Pets Victoria</h2>
             <p>Pets Victoria is a dedicated pet adoption organization based in Victoria, Australia, Focused on providing
@@ -25,45 +28,29 @@
                         <th class="add-page-table-shortcolumn">Age</th>
                         <th class="add-page-table-longcolumn">Location</th>
                     </tr>
-                    <tr>
-                        <td>Milo</td>
-                        <td>Cat</td>
-                        <td>3 Months</td>
-                        <td>Melbourne CBD</td>
-                    </tr>
-                    <tr>
-                        <td>Baxter</td>
-                        <td>Dog</td>
-                        <td>5 Months</td>
-                        <td>Cape Woolmai</td>
-                    </tr>
-                    <tr>
-                        <td>Luna</td>
-                        <td>Cat</td>
-                        <td>1 Month</td>
-                        <td>Ferntree Gully</td>
-                    </tr>
-                    <tr>
-                        <td>Willow</td>
-                        <td>Dog</td>
-                        <td>48 Months</td>
-                        <td>Marysville</td>
-                    </tr>
-                    <tr>
-                        <td>Oliver</td>
-                        <td>Cat</td>
-                        <td>12 Months</td>
-                        <td>Grampians</td>
-                    </tr>
-                    <tr>
-                        <td>Bella</td>
-                        <td>Dog</td>
-                        <td>10 Months</td>
-                        <td>Carlton</td>
-                    </tr>
+
+                    <?php
+                    while($row = mysqli_fetch_assoc($pets)) {
+                        
+                        echo "<tr>";
+                        
+                        echo "
+                            <td><a href='details.php?id={$row['petid']}'>{$row['petname']}</a></td>
+                            <td>{$row['type']}</td>
+                            <td>{$row['age']}</td>                          
+                            <td>{$row['location']}</td>
+                            ";   
+                        
+                        echo "</tr>";
+                    }
+                    ?>
+
                 </table>
+
             </div>
 
         </main>
-           <?php
- include ("includes/footer.inc");?>
+
+<?php
+ include ("includes/footer.inc");
+ ?>

@@ -18,6 +18,7 @@
       //pre($row);
         echo <<<"CDATA"
                 <div class="gallery-page-image-container">
+                <a href='details.php?id={$row['petid']}'>
                 <img src="images/{$row['image']}" alt="icon" class="gallery-page-image">
                 <div class="gallery-page-image-discovermore">
                     <span class="material-symbols-outlined">
@@ -26,48 +27,12 @@
                     Discover More!
                 </div>
                 <div class="gallery-page-image-name">{$row['petname']}</div>
+                </a>
             </div>
 
         CDATA;
             }
             ?>
-
-
-
-
-            <hr>
-            <div class="gallery-page-image-container">
-                <img src="images/cat1.jpeg" alt="icon" class="gallery-page-image">
-                <div class="gallery-page-image-discovermore">
-                    <span class="material-symbols-outlined">
-                        search
-                    </span><br>
-                    Discover More!
-                </div>
-                <div class="gallery-page-image-name">Milo</div>
-
-
-            </div>
-            <div class="gallery-page-image-container">
-                <img src="images/dog1.jpeg" alt="icon" class="gallery-page-image">
-                <div class="gallery-page-image-name">Baxter</div>
-            </div>
-            <div class="gallery-page-image-container">
-                <img src="images/cat2.jpeg" alt="icon" class="gallery-page-image">
-                <div class="gallery-page-image-name">Luna</div>
-            </div>
-            <div class="gallery-page-image-container">
-                <img src="images/dog2.jpeg" alt="icon" class="gallery-page-image">
-                <div class="gallery-page-image-name">Willow</div>
-            </div>
-            <div class="gallery-page-image-container">
-                <img src="images/cat4.jpeg" alt="icon" class="gallery-page-image">
-                <div class="gallery-page-image-name">Oliver</div>
-            </div>
-            <div class="gallery-page-image-container">
-                <img src="images/dog3.jpeg" alt="icon" class="gallery-page-image">
-                <div class="gallery-page-image-name">Bella</div>
-            </div>
         </main>
 
         <?php
