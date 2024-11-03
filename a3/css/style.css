@@ -1,0 +1,284 @@
+/* -------------------------- Styles For All Pages ---------------------------------- */
+/* Header Style */
+
+header {
+    background-color: #008080;
+    min-height: 90px;
+}
+
+header img {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+header nav {
+    display: inline-block;
+}
+
+/* header .search-container {
+    display: inline-block;
+    float: right;
+} */
+
+#logo {
+    vertical-align: middle;
+}
+
+header .search-icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+a:link {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* Footer Style */
+footer {
+    background-color: #E57F3D;
+    position: relative;
+    height: 100px;
+}
+
+.center {
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Body Style */
+body {
+    margin: auto;
+}
+
+
+
+/* -------------------------- Index Page Styles ---------------------------------- */
+
+.index-page-main {
+    background-color: #fcf9ec;
+}
+
+main h1 {
+    font-family: "Permanent Marker";
+    color: #E57F3D;
+    font-size: 48px;
+}
+
+main h2 {
+    font-family: "Poetsen One";
+    color: #008080;
+    font-size: 48px;
+}
+
+main p {
+    font-family: 'Ysabeau SC'
+}
+
+main .main-title {
+    display: inline-block;
+    margin-top: 0;
+}
+
+main .main-image {
+    display: inline-block;
+}
+
+main .main-image img {
+    border-radius: 50%;
+}
+
+main table {
+    border: 1px solid black;
+    float: right;
+}
+
+/* -------------------------- Pets Page Styles ---------------------------------- */
+.add-page-image {
+    display: inline-block;
+}
+
+.add-page-table {
+    display: inline-block;
+    float: right;
+    height: 250px;
+    overflow: scroll;
+}
+
+.add-page-table-shortcolumn {
+    width: 100px;
+}
+
+.add-page-table-longcolumn {
+    width: 250px;
+}
+
+.add-page-title {
+    font-family: "Poetsen One";
+    color: black;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.add-page-table th {
+    background-color: #fcf9ec;
+    color: #008080;
+    font-family: 'Ysabeau SC'
+}
+
+.add-page-table td {
+    background-color: white;
+    font-family: 'Ysabeau SC'
+}
+
+/* -------------------------- Add Page Styles ---------------------------------- */
+.addpets-page-title {
+    font-family: "Poetsen One";
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+.addpets-page-description {
+    text-align: center;
+}
+
+.addpets-page-input {
+    width: 100%;
+}
+
+.addpets-page-label {
+    font-family: 'Ysabeau SC';
+}
+
+.addpets-page-labelstar {
+    color: red;
+}
+
+.addpets-page-submit {
+    border-radius: 12px;
+    background-color: #008080;
+    color: white;
+    border: none;
+}
+
+.addpets-page-close {
+    border-radius: 12px;
+    color: #008080;
+    border-color: #008080;
+}
+
+.addpets-page-buttons {
+    margin: auto;
+    width: 20%;
+
+}
+
+.addpets-page-nofile {}
+
+.addpets-page-maximage {
+    display: inline-block;
+    margin-left: 200px;
+    font-style: italic;
+    color: red;
+}
+
+/* -------------------------- Gallery Page Styles ---------------------------------- */
+
+.gallery-page-image {
+    width: 300px;
+    height: 200px;
+    border-radius: 12px;
+
+
+}
+
+.gallery-page-image:hover {
+    opacity: 0.6;
+}
+
+.gallery-page-image-container {
+    display: inline-block;
+    border-radius: 12px;
+    border: 1px solid gray;
+}
+
+.gallery-page-image-name {
+    text-align: center;
+    font-family: "Poetsen One";
+}
+
+.gallery-page-title {
+    font-size: 18px;
+    text-align: center;
+    color: black;
+}
+
+.gallery-page-image-discovermore {
+    position: absolute;
+    top: 320px;
+    left: 440px;
+    opacity: 0;
+
+}
+
+.gallery-page-image-discovermore:hover {
+    opacity: 1;
+}
+
+/* -------------------------- Details Page Styles ---------------------------------- */
+.detail-page-image-outer {
+    display: block;
+    text-align: center;
+}
+
+.detail-page-age {
+    width: 380px;
+    text-align: center;
+    font-family: 'Ysabeau SC';
+}
+
+.detail-page-type {
+    width: 380px;
+    text-align: center;
+    font-family: 'Ysabeau SC';
+}
+
+.detail-page-location {
+    width: 380px;
+    text-align: center;
+    font-family: 'Ysabeau SC';
+}
+
+.detail-page-petname {
+    text-align: center;
+    font-family: "Poetsen One";
+}
+
+.detail-page-description {
+    text-align: center;
+    font-family: 'Ysabeau SC';
+
+}
