@@ -15,7 +15,7 @@ $pets = mysqli_query($conn, $sql);
 
     <div class="row"> 
         <div class="col-md-12 justify-content-center">
-            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <div id="demo" class="carousel slide  w-50 mx-auto" data-bs-ride="carousel">
                 <!-- Indicators -->
                 <ul class="carousel-indicators">
                     <li data-bs-target="#demo" data-bs-slide-to="0" class="active"></li>
@@ -33,14 +33,14 @@ $pets = mysqli_query($conn, $sql);
         $counter++;
         if ($counter==1){
          echo <<<"CDATA"
-                    <div class="carousel-item active">
+                    <div class="carousel-item active w-100">
                         <img src="images/{$row['image']}" alt="">
                     </div>              
      CDATA;  
         }
         else {
                echo <<<"CDATA"
-                    <div class="carousel-item">
+                    <div class="carousel-item w-100">
                         <img src="images/{$row['image']}" alt="">
                     </div>              
      CDATA;
