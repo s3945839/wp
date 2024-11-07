@@ -1,6 +1,15 @@
  <?php
  include ("includes/header.inc");
- $pets = mysqli_query($conn, "select * from pets");
+ 
+ if (empty ($_POST['pettype']) ) {
+    $sql = "SELECT * FROM pets"; 
+}
+else {
+    $p2 = "'" . $_POST['pettype'] ."'"; 
+    $sql = "SELECT * FROM pets WHERE type = " . $p2;
+}
+
+$pets = mysqli_query($conn, $sql);
  
  ?>
      <main>
@@ -17,17 +26,19 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-            <select id="menu" class="form-control" onchange="changePage()">
+            <form  id ="galleryForm" method="post" action= "gallery.php" enctype="multipart/form-data">
+            <select id="pettype" name="pettype" class="form-control" onchange="submitGalleryPage()">
                     <option value="">
                         Select type...
                     </option>
-                    <option value="index.php">
-                        Home
+                    <option value= "cat">
+                        Cat
                     </option>
-                    <option value="pets.php">
-                        Pets
+                    <option value= "dog">
+                        Dog
                     </option>
                 </select>
+                 </form>  
                 </div> 
             </div>
              <div class="row">
@@ -51,10 +62,9 @@
 
                 CDATA;
                     }
-                    ?>
-
-                </div>
+                    ?> 
              </div>
+          </div>
         </main>
 
         <?php

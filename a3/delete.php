@@ -1,7 +1,6 @@
 <?php
-require_once('includes/db_connect.inc');
 include('includes/header.inc');
-include('includes/nav.inc');
+
 
 if (!empty($_GET['id'])) {
     $id = $_GET['id'];
@@ -21,10 +20,10 @@ if (!empty($_GET['id'])) {
             echo "<p>{$row['description']}</p>";
             echo "<img src='images/{$row['image']}' alt='{$row['caption']}' class='delete-img'>";
             echo "<p class='confirm'>";
-            echo "<a href='gallery.php'>Cancel</a>";
+            echo "<a href='gallery.php'  class='btn btn-primary'>Cancel</a>";
             // encode url to make html valid
             $imagename = urldecode("images/{$row['image']}");
-            echo "<a href='delete-process.php?id={$row['petid']}'>Delete</a>";
+            echo "<a href='delete-process.php?id={$row['petid']}' class='btn btn-danger'>Delete</a>";
             echo "</p>";
             echo '</div>';
         }

@@ -1,5 +1,5 @@
 <?php
-$title = "Register";
+$title = "Login";
 include('includes/header.inc');
 ?>
 <h1>Login page</h1>

@@ -7,3 +7,9 @@ function changePage ()
     }
 }
 
+
+
+function submitGalleryPage ()
+{
+    document.getElementById("galleryForm").submit();
+}

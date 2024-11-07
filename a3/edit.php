@@ -26,7 +26,7 @@
     <p><label for="description">Pet Description</label><br>
     <textarea name="description" id="description"><?= $row['description'] ?></textarea></p>
     <p><label for="image">Pet Image</label><br>
-    <input type="file" name="image" id="image"> <span>Currently <?= $row['image'] ?> <img src="<?= 'images/'.$row['image'] ?>" ></span></p>
+    <input type="file" name="image" id="image"> <span>Currently <?= $row['image'] ?> <img src="<?= 'images/'.$row['image'] ?>" alt="" ></span></p>
     <p><label for="caption">Image Caption</label><br>
     <input type="text" name="caption" id="caption" value="<?= $row['caption'] ?>"></p>
     <p><label for="caption">Pet Age</label><br>

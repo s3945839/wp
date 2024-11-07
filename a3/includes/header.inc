@@ -31,35 +31,10 @@ session_start();
                 <img src="images/logo.png" alt="pawprint">
             </div>
             <div class="col-md-8 align-bottom">
-                <nav class="navbar navbar-expand-sm">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.php">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pets.php">Pets</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.php">Gallery</a>
-                        </li>
-                        <?php if (!isset($_SESSION['username'])) {  ?>
-                            <li class="nav-item">
-                                <a class="nav-link" href="register.php" >Registration</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="login.php" >Login</a>
-                            </li>
-                        <?php } ?>
-                        <?php if (!empty($_SESSION['username'])) { ?>                            
-                            <li class="nav-item">
-                                <a class="nav-link" href="add.php">Add More</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="logout.php" >Logout</a>
-                            </li>
-                        <?php } ?>                        
-                    </ul>
-                </nav>
+                <?php
+                include("includes/nav.inc"); 
+                ?>
+
             </div>
             <div class="col-md-3 align-bottom">
                 <div class="search-container">
@@ -73,8 +48,9 @@ session_start();
                 </div>                
             </div>
         </div>
+        
     </header>
-    <div id=wrapper>
+    
         
            
             

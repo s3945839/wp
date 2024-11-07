@@ -1,19 +1,29 @@
-<nav>
-                <select id="menu" onchange="changePage()">
-                    <option value="">
-                        Please select
-                    </option>
-                    <option value="index.php">
-                        Home
-                    </option>
-                    <option value="pets.php">
-                        Pets
-                    </option>
-                    <option value="add.php">
-                        Add
-                    </option>
-                    <option value="gallery.php">
-                        Gallery
-                    </option>
-                </select>
-            </nav>
+<nav class="navbar navbar-expand-sm">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pets.php">Pets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.php">Gallery</a>
+                        </li>
+                        <?php if (!isset($_SESSION['username'])) {  ?>
+                            <li class="nav-item">
+                                <a class="nav-link" href="register.php" >Registration</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.php" >Login</a>
+                            </li>
+                        <?php } ?>
+                        <?php if (!empty($_SESSION['username'])) { ?>                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="add.php">Add More</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="logout.php" >Logout</a>
+                            </li>
+                        <?php } ?>                        
+                    </ul>
+                </nav>

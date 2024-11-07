@@ -13,14 +13,14 @@
   ) {
     // change / upload a new image
     $sql = "
-      UPDATE country
+      UPDATE pets
       SET
         petname = ?,
         description = ?,
         image = ?,
-        caption = ?
-        age = ?
-        location = ?
+        caption = ?,
+        age = ?,
+        location = ?,
         type = ?
       WHERE petid = ?";
     $stmt = $conn->prepare($sql);
@@ -33,7 +33,7 @@
       $_POST['age'],
       $_POST['location'],
       $_POST['type'],
-      $_POST['countryid']
+      $_POST['petid']
     );
   } else {
     // don't change / upload a new image
@@ -69,17 +69,23 @@
 /* If a country was modified in the database ... */
   if ($stmt->affected_rows > 0) {
     echo "<p>Pet was modified in the database.</p>";
+
 /* ... remove image of same name if it exists ... */      
-    if (!empty($_FILES['image']['name']) && file_exists($imagePath.$_FILES['image']['name'])) {
-      unlink($imagePath.$_FILES['image']['name']);
+    if (!empty($_FILES['image']['name']) && file_exists($_FILES['image']['name'])) {
+      unlink($_FILES['image']['name']);
     }
+
 /* ... move image from tmp folder to images folder ... */      
-    if (!empty($_FILES['image']['name']) && move_uploaded_file($_FILES['image']['tmp_name'],$imagePath.$_FILES['image']['name'])) {
+    if (!empty($_FILES['image']['name']) && 
+        move_uploaded_file($_FILES['image']['tmp_name'], $_FILES['image']['name'])) 
+    {
       echo "<p>File was added to the images directory.</p>";
-    } else {
+    } 
+    else {
       echo "<p>File was NOT added to the images directory.</p>";
     }    
-  } else {
+  } 
+  else {
     echo "<p>Pet was not editied in the database, image not uploaded.</p>";
   }
   

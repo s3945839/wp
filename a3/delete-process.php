@@ -1,7 +1,7 @@
 <?php
   include("includes/db_connect.inc");
 
-  pre($_GET);
+
 
   $sqlNoWait = "SELECT image FROM pets WHERE petid = ?";
   $stmt = $conn->prepare($sqlNoWait);
@@ -12,7 +12,6 @@
   $row = $result->fetch_assoc();
   $imageToDelete = $row['image']; 
 
-  pre([$sqlNoWait,$imageToDelete]);
 
   $sql = "DELETE FROM pets WHERE petid = ?";
   $stmt = $conn->prepare($sql);
