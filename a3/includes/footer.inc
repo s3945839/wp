@@ -1,6 +1,6 @@
   <?php
   $pets= mysqli_query($conn, "SELECT DISTINCT u.userID, username from users u Join pets p on u.userID=p.userID");
-  pre($pets);
+  
  ?>
    
 
